@@ -30,12 +30,24 @@ const orders = [
        delivery:true,
     },
     {
-        customerName:"maria",
+       customerName:"maria",
        total: 48,
        delivery:false,
-    }
+    },
+    {
+        customerName:"juan",
+        total: 90,
+        delivery:false,
+     }
 
 ];
 
 const filterOrders = orders.filter(item => item.delivery && item.total >=50);
 console.log(filterOrders);
+
+
+const search=(query)=>{
+    return orders.filter(item => item.customerName.includes(query));
+};
+
+console.log(search("juan"));
