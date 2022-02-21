@@ -24,3 +24,40 @@ const findReduce = numbers.reduce((obj,item)=>{
 });
 
 console.log(findReduce);
+
+const objects = [
+    {
+       customerName:"juan",
+       level: "low",
+       
+
+    },
+   {
+    customerName:"santiago",
+       level: "medium",
+      
+    },
+    {
+        customerName:"carlos",
+       level:"hight",
+       
+    },
+    {
+        customerName:"maria",
+         level: "low",
+
+    }
+
+];
+
+const returnLevels = objects.map(item => item.level)
+.reduce((obj,item)=>{
+    if(!obj[item]){
+        obj[item] = 1;
+    }else{
+        obj[item] = obj[item]+1;
+    }
+  return obj
+},{});
+
+console.log(returnLevels);
