@@ -29,22 +29,24 @@ const objects = [
     {
        customerName:"juan",
        level: "low",
+       price: ""
        
 
     },
    {
     customerName:"santiago",
        level: "medium",
-      
+      price:""
     },
     {
         customerName:"carlos",
        level:"hight",
-       
+       price:""
     },
     {
         customerName:"maria",
          level: "low",
+         price:""
 
     }
 
