@@ -17,5 +17,5 @@ const team = [
     },
   ];
 
-const edadAdecuada = team.map(person => person.age).every(player => player <=15)
+const edadAdecuada = team.map(person => person.age).every(player => player <=15);
   console.log("pueden jugar:",edadAdecuada);
